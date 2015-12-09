@@ -100,6 +100,6 @@ describe('Session store methods', function (done) {
     });
 
     after(function () {
-        //conn.query("DROP TABLE IF EXISTS connect_mysql_test.sessions");
+        conn.query("DROP TABLE IF EXISTS connect_mysql_test.sessions");
     })
 });
