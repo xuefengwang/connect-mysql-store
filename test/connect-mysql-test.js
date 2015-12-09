@@ -103,3 +103,39 @@ describe('Session store methods', function (done) {
         conn.query("DROP TABLE IF EXISTS connect_mysql_test.sessions");
     })
 });
+
+//describe('Session store with customized table name', function () {
+//    var options = {
+//        url: 'mysql://travis@localhost/connect_mysql_test',
+//        table: 'my_sessions'
+//    };
+//    var store = new MySQLStore(options);
+//    var conn = mysql.createConnection(options.url);
+//    var sid = 'test-session-sid';
+//    var sessionTestData = {test: 'b'};
+//
+//    before(function (done) {
+//        conn.query("CREATE TABLE IF NOT EXISTS connect_mysql_test.my_sessions " +
+//            "(sid varchar(255) NOT NULL, session varchar(2048) NOT NULL DEFAULT '', " +
+//            "updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, " +
+//            "PRIMARY KEY (sid)) " +
+//            "ENGINE=InnoDB DEFAULT CHARSET=utf8", function (err) {
+//            done(err);
+//        });
+//    });
+//
+//    it('should set session', function (done) {
+//        store.set(sid, sessionTestData, function (err) {
+//            assert(!err);
+//            store.get(sid, function (err, session) {
+//                assert(!err);
+//                assert(_.isEqual(session, sessionTestData));
+//                done();
+//            });
+//        });
+//    });
+//
+//    after(function () {
+//        conn.query("DROP TABLE IF EXISTS connect_mysql_test.my_sessions");
+//    });
+//});
