@@ -8,7 +8,7 @@ services: mysql
 sudo: false
 
 before_script:
-  - mysql -uroot -e "CREATE DATABASE connect-mysql-test"
+  - mysql -uroot -e "CREATE DATABASE connect_mysql_test;"
   - mysql -uroot -e "CREATE TABLE sessions (sid varchar(255) NOT NULL, session varchar(2048) NOT NULL DEFAULT '', PRIMARY KEY (sid)) ENGINE=InnoDB DEFAULT CHARSET=utf8;"
 
 script: "npm test"
