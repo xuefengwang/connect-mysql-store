@@ -36,7 +36,7 @@ describe('Session store methods', function (done) {
     var sid = 'test-session-sid';
 
     before(function (done) {
-        conn.query("CREATE TABLE connect_mysql_test.sessions " +
+        conn.query("CREATE TABLE IF NOT EXISTS connect_mysql_test.sessions " +
             "(sid varchar(255) NOT NULL, session varchar(2048) NOT NULL DEFAULT '', PRIMARY KEY (sid)) " +
             "ENGINE=InnoDB DEFAULT CHARSET=utf8", function (err) {
             done(err);
