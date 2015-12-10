@@ -1,5 +1,5 @@
 {
-  "name": "connect-mysql",
+  "name": "connect-mysql-store",
   "version": "0.0.1",
   "dependencies": {
     "debug": "^2.2.0",
@@ -13,5 +13,25 @@
   "scripts": {
     "test": "mocha"
   },
-  "main": "./lib/connect-mysql"
+  "main": "./lib/connect-mysql",
+  "description": "A simple and minimal Connect/Express MySQL session store",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuefengwang/connect-mysql.git"
+  },
+  "keywords": [
+    "Express",
+    "MySQL",
+    "Session",
+    "Store"
+  ],
+  "author": "Xuefeng Wang <xuefengw@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xuefengwang/connect-mysql/issues"
+  },
+  "homepage": "https://github.com/xuefengwang/connect-mysql#readme"
 }
