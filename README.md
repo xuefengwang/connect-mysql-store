@@ -26,12 +26,25 @@ CREATE TABLE sessions (
 
 # Usage
 
+See more detailed explanation at [Express session](https://github.com/expressjs/session). 
 
+```
+app.use(session({
+  secret: 'super secret!',
+  resave: true,
+  saveUninitialized: false,
+  store: new MySQLStore({
+    url: dbUrl,
+    table: 'my_sessions'
+  })
+}));
+```
 
 # Options
 
-
-
+  - url: (required). MySQL database connction string.
+  - table: (optional). Table name to save the sessions data. By default, name is 'sessions'. 
+  
 # License
 
 MIT License
