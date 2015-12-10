@@ -1,4 +1,4 @@
-# connect-mysql
+# connect-mysql-store
 
 A simple and minimal MySQL session store for [Express session](https://github.com/expressjs/session)
 
