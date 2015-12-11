@@ -3,7 +3,7 @@
 A simple and minimal MySQL session store for [Express session](https://github.com/expressjs/session)
 
 [![npm version](https://img.shields.io/npm/v/connect-mysql-store.svg)](https://www.npmjs.com/package/connect-mysql-store)
-[![Build Status](https://travis-ci.org/xuefengwang/connect-mysql.svg?branch=master)](https://travis-ci.org/xuefengwang/connect-mysql)
+[![Build Status](https://travis-ci.org/xuefengwang/connect-mysql-store.svg?branch=master)](https://travis-ci.org/xuefengwang/connect-mysql-store)
 
 # Installation
 
