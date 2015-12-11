@@ -34,8 +34,7 @@ app.use(session({
   resave: true,
   saveUninitialized: false,
   store: new MySQLStore({
-    url: dbUrl,
-    table: 'my_sessions'
+    url: dbUrl
   })
 }));
 ```
