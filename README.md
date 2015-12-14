@@ -34,14 +34,14 @@ app.use(session({
   resave: true,
   saveUninitialized: false,
   store: new MySQLStore({
-    url: dbUrl
+    url: mysql://travis@localhost/connect_mysql_test
   })
 }));
 ```
 
 # Options
 
-  - url: (required). MySQL database connction string.
+  - url: (required). MySQL database connection string.
   - table: (optional). Table name to save the sessions data. By default, name is 'sessions'. 
   
 # License
